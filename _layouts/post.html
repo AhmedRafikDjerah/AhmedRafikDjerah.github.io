@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<div class="container">
+	<div class="row"> 
+		<div class="col">
+			<h1 class="display-4 mb-4 text-center" style="font-weight:bold;">{{page.title | smartify}}</h1>
+			<div class="fa-1x text-muted text-center mb-4">
+	    		<i class="fas fa-calendar-alt fa-fw" style="color:tomato;"></i>
+	    		<span class="mr-4">{{page.date | date: '%d, %B %Y'}}</span>
+
+	    		{% assign words = content | number_of_words %}
+	    		<i class="fas fa-clock fa-fw" style="color:tomato;"></i>
+	    		{% if words < 360 %}
+  					<span>1 min</span>>
+				{% else %}
+  					<span>{{ words | divided_by:180 }} mins</span>
+				{% endif %}
+
+  			</div>
+  			<img src="{{site.baseurl}}/images/{{page.img.featured}}" class="mx-auto d-block mb-4 img-fluid">
+  			<div class="post-content">
+				{{content | markdownify}}
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			{% assign author = site.authors[page.author] %}
+			<div class="card">
+				<div class="card-body">
+					<img src="{{author.image}}" class="float-left mr-4 rounded">
+					<h5 class="card-title">{{author.name}}</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum nisi sit amet ex molestie, in commodo turpis sagittis. Sed lectus dolor, dictum mattis lectus eu, pulvinar ultricies ipsum. Nunc interdum consequat augue, sit amet interdum erat porttitor sed. Proin mattis magna non lorem condimentum egestas. Quisque vitae fermentum augue. Aliquam quis elit ipsum. Maecenas condimentum ligula nec efficitur maximus.</p>
+
+					<div class="fa-2x float-right mr-4">
+						<a href="#" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+
+						<a href="#" target="_blank" style="color:red;">
+							<i class="fab fa-google-plus-g"></i>
+						</a>
+
+						<a href="#" target="_blank">
+							<i class="fas fa-envelope"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+
+

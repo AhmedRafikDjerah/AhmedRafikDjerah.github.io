@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="container">
+	{% assign rows = site.posts.size | divided_by: 3.0 | ceil %}
+	{% for i in (1..rows) %}
+		{% assign offset = forloop.index0 | times: 3 %}
+		<div class="row mb-5">
+			{% for post in site.posts limit:3 offset:offset %}
+				<div class="card mr-5 mx-auto" style="width: 18rem;">
+					<div class="content">
+						<div class="content-overlay"></div>
+						<img src="{{site.basurl}}/images/{{post.img.index}}">
+						<div class="content-details">
+							{% assign author = site.authors[post.author] %}
+       						<h3 class="content-text">{{author.name}}</h3>
+      					</div>
+					</div>
+				
+					<div class="card-body">
+						<h5 class="card-title"><strong>{{post.title | upcase}}</strong></h5>
+						<p class="card-text">{{post.excerpt}}</p>
+						<a href="{{post.url}}" class="btn btn-warning btn-block">Read More</a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	{% endfor %}
+</div>

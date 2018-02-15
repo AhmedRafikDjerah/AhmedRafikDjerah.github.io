@@ -1,0 +1,143 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #008cba;
+}
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+  margin-bottom: 60px;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+
+}
+
+/*
+--- Custom navbar
+*/
+.navbar {
+	padding: 1.0rem 1.0rem;
+	font-size: 1.0rem;
+}
+.navbar-brand {
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+
+
+/*
+--- Custom colors for btn-warning
+*/
+.btn-warning {
+	background-color: #ec480c;
+	border-color: #ec480c;
+}
+
+.btn-warning:hover {
+	background-color: #c73500;
+	border-color: #c73500;
+}
+
+.btn  {
+	font-size: 1rem;
+}
+
+.card-index {
+	padding: 1rem 1rem;
+}
+
+.zero-padding {
+	padding: 0;
+}
+
+/*
+--- Image Overlay 
+*/
+
+.content .content-overlay {
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	height: 180px;
+	width: 286px;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-details {
+  position: absolute;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 32%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+
+.content:hover .content-details{
+  top: 20%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+}
+
+.post-content {
+	font-size: 23px;
+	line-height: 2.5rem;
+}
+
+/*
+--- blockquote styling 
+*/
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #008cba;
+  margin: 40px auto;
+  padding: 0.5em 10px;
+  text-align: center;
+  display: table;
+  font-style: italic;
+  color: #403c3c;
+}
+
+
+blockquote p {
+  display: inline;
+}
+
