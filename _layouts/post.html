@@ -4,7 +4,7 @@ layout: default
 
 <div class="container">
 	<div class="row"> 
-		<div class="col">
+		<div class="col-md-10">
 			<h1 class="display-4 mb-4 text-center" style="font-weight:bold;">{{page.title | smartify}}</h1>
 			<div class="fa-1x text-muted text-center mb-4">
 	    		<i class="fas fa-calendar-alt fa-fw" style="color:tomato;"></i>
@@ -26,7 +26,7 @@ layout: default
 		</div>
 	</div>
 	<div class="row">
-		<div class="col">
+		<div class="col-md-10">
 			{% assign author = site.authors[page.author] %}
 			<div class="card">
 				<div class="card-body">
@@ -51,7 +51,20 @@ layout: default
 			</div>
 		</div>	
 	</div>
+	<div class="row">
+		<div class="col-md-10">
+			<div id="disqus_thread"></div>
+			<script>
+			(function() { 
+			var d = document, s = d.createElement('script');
+			s.src = 'https://humancancode.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+			})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		</div>
+	</div>
 </div>
-
 
 

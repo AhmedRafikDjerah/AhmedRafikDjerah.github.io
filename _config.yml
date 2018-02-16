@@ -1,5 +1,5 @@
 # Site settings
-title: Your Bootstrap 4 Blog Title
+title: Human Can Code
 email: your-email@domain.com
 description: Just a simple site description here.
 baseurl: "" # the subpath for your Jekyll, for example the"/subpath" bit in the url: http://yourdomain.com/subpath

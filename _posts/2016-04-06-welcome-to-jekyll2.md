@@ -4,6 +4,9 @@ title: 'The art of coding'
 date: '2018-02-11 9:51:11 +0100'
 categories: coding
 author: djerah_ahmed_rafik
+img:
+  index: js400.jpg
+  featured: js400_featured.jpg
 ---
 
 orem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare lectus eu arcu volutpat, ornare sollicitudin quam semper. Mauris viverra nec diam non malesuada.<!-- more --> Quisque placerat dolor sed ante hendrerit fermentum. Vestibulum porta vulputate turpis, sed posuere quam ultricies vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat augue justo, sit amet ullamcorper velit dapibus in. Pellentesque accumsan quam quis ligula finibus dignissim. Sed non nulla semper, feugiat turpis ut, consequat leo.
